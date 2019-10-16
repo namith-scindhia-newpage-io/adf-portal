@@ -1,0 +1,19 @@
+{
+  "search": [
+    {
+      "id": "",
+      "name": ".NET Project",
+      "url": "http://localhost:5001/swagger"
+    },
+    {
+      "id": "",
+      "name": "Python Project",
+      "url": "http://localhost:5001/swagger"
+    },
+    {
+      "id": "",
+      "name": "PHP Project",
+      "url": "http://localhost:5001/swagger"
+    }
+  ]
+}
