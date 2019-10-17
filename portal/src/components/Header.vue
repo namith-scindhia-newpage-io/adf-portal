@@ -1,9 +1,11 @@
 <template>
   <div id="header">
     <header>
-      <nav class="blue-grey darken-2">
+      <nav class="grey lighten-5">
         <div class="nav-wrapper">
-          <a href="/" class="brand-logo">API Documentation Framework - Portal</a>
+          <a href="/" class="brand-logo">
+            <img src="../assets/logo2x.png" class="logo" />
+          </a>
         </div>
       </nav>
     </header>
@@ -14,3 +16,9 @@ export default {
   name: "Header"
 };
 </script>
+<style scoped>
+.header .logo {
+  height: 50px;
+  width: 200px;
+}
+</style>

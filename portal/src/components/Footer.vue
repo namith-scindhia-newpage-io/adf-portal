@@ -4,9 +4,17 @@
       <div class="footer-copyright">
         <div class="container">
           © 2019 Copyright
-          <a class="grey-text text-lighten-4 right" href="#!">API Documentation Framework - Portal</a>
+          <a class="grey-text text-lighten-4 right" href="#!">
+            <img src="../assets/logo2x.png" class="logo" />
+          </a>
         </div>
       </div>
     </footer>
   </div>
 </template>
+<style scoped>
+.footer .logo {
+  height: 50px;
+  width: 200px;
+}
+</style>
