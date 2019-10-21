@@ -14,12 +14,13 @@
     <div class="row"></div>
     <div class="row">
       <div class="col s3" v-for="result in results" :key="result.id">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
+        <div class="card grey lighten-5">
+          <div class="card-content">
             <span class="card-title">{{result.name}}</span>
             <p>{{result.description}}</p>
           </div>
           <div class="card-action">
+            <!-- <router-link to="/swagger">Open Swagger Documentation</router-link> -->
             <!-- <a @click.prevent="openSwagger(result.url)">Open Swagger Documentation</a> -->
             <a v-bind:href="swaggerBaseUrl + result.url" target="_blank">Open Swagger Documentation</a>
           </div>
@@ -39,7 +40,7 @@ export default {
       isLoading: false,
       errorMessage: "",
       results: [],
-      swaggerBaseUrl: 'http://petstore.swagger.io/?url='
+      swaggerBaseUrl: "http://localhost:4003/swagger/?url="
     };
   },
   methods: {
@@ -57,6 +58,10 @@ export default {
             this.errorMessage = error.response;
           });
       }
+    },
+    openSwagger(url) {
+      const newUrl = "/swagger?url=" + url;
+      this.$router.push(newUrl);
     }
   }
 };
