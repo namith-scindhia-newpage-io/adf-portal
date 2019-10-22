@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 var apiClient = axios.create({
-  baseURL: 'http://localhost:4001/',
+  baseURL: 'https://search-nextgen-poc-3ngoun6ibbyui33nev4doun6g4.us-west-2.es.amazonaws.com/swagger/',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -10,7 +10,16 @@ var apiClient = axios.create({
 });
 
 export default {
-  search() {
-    return apiClient.get('search');
+  search(query) {
+    const data = {
+      "_source": ["id", "name", "description", "url"],
+      "query": {
+        "query_string": {
+          "query": "*" + query + "*"
+        }
+      },
+      "size": 10000
+    };
+    return apiClient.post('_search', data);
   }
 }
