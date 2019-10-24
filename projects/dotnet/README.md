@@ -2,7 +2,10 @@
 This is a .NET sample project used to showcase swagger json. It has a simple Weather Api and one get method.
 
 ### To Setup and Start
-Install .NET - https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install
+Install .NET
+```
+https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install
+```
 
 Navigate to the project folder
 ```
