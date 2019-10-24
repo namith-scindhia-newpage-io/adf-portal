@@ -1,16 +1,26 @@
 # API Documentation Standardization - Portal
 
 ## Portal
-```cd /portal```
+```
+cd /portal
+```
 
 ## Swagger Portal
-```cd /swagger-portal```
+```
+cd /swagger-portal
+```
 
 ## Backend
-```cd /backend```
+```
+cd /backend
+```
 
 ## .NET sample project
-```projects/dotnet```
+```
+cd projects/dotnet
+```
 
 ## Python sample project
-```projects/python```
+```
+cd projects/python
+```
