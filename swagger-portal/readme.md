@@ -1,15 +1,19 @@
-### To Setup and Start
-```bash
+## Background
+This is a python based swagger portal. Given a valid json/yaml file in the url parameter, it will list down the API's and schemas.
+
+## To Setup and Start
+
+Install the dependencies
+```
 pip install -r requirements.txt
-python app.py
 ```
 
+Run the code
+```
+python app.py
+```
 
 ## Swagger UI
 
 Hosted Locally
-http://127.0.0.1:5000/swagger/
-
-###
-Hosted via Docker-compose and Nginx
-http://127.0.0.1/swagger/
+http://localhost:4003/swagger/
