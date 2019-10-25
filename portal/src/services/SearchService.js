@@ -12,7 +12,7 @@ var apiClient = axios.create({
 export default {
   search(query) {
     const data = {
-      "_source": ["id", "name", "description", "url"],
+      "_source": ["id", "name", "description", "link"],
       "query": {
         "query_string": {
           "query": "*" + query + "*"

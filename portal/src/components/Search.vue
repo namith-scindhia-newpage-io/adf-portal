@@ -36,7 +36,7 @@
             </div>
             <div class="card-action">
               <a
-                v-bind:href="swaggerBaseUrl + result.url"
+                v-bind:href="swaggerBaseUrl + result.link"
                 target="_blank"
               >Open Swagger Documentation</a>
             </div>
